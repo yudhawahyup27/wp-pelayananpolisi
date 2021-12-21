@@ -17,6 +17,12 @@
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Penganti Role</span></a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/skck/">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Tambah Data SKCK</span></a>
+        </li>
         <!-- Divider -->
 
     <?php endif; ?>
@@ -55,8 +61,7 @@
         </a>
         <div id="collapsePages" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Login Screens:</h6>
-                <a class="collapse-item" href="/skck/">Skck</a>
+                <a class="collapse-item" href="/skck/lihat">Lihat Data SKCK</a>
                 <a class="collapse-item" href="register.html">Register</a>
                 <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
                 <div class="collapse-divider"></div>

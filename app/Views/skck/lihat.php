@@ -4,8 +4,6 @@ use CodeIgniter\Filters\CSRF;
 ?>
 <?= $this->extend('Templates/index'); ?>
 <?= $this->section('content'); ?>
-
-
 <div class="container-fluid">
     <table id="dataskck" class="table table-borded" style="width:100%">
 
@@ -34,7 +32,7 @@ use CodeIgniter\Filters\CSRF;
                     <td><?= $b['rw']; ?> </td>
                     <td><?= $b['status']; ?> </td>
                     <td>
-                        <a href="/skck/ubah<?= $b['nama_d']; ?>" class="btn bg-success">Edit</a>
+                        <a href="/skck/ubah/<?= $b['nama_d']; ?>" class="btn bg-success">Edit</a>
                         <form action="/skck/lihat/<?= $b['id']; ?>">
                             <?= csrf_field(); ?>
                             <input type="hidden" value="DELETE" name="_method">
