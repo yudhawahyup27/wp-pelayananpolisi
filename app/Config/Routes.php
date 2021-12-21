@@ -34,6 +34,10 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'user::index');
 $routes->get('/admin', 'admin::index', ['filter' => 'role:admin']);
 $routes->get('/admin/index', 'admin::index', ['filter' => 'role:admin']);
+$routes->get('/warga', 'warga::index', ['filter' => 'role:user']);
+$routes->get('/warga/index', 'warga::index', ['filter' => 'role:user']);
+$routes->get('/skck/ubah/(:any)', 'skck::ubah/$1');
+$routes->get('/skck/lihat/(:num)', 'skck::delete/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

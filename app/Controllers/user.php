@@ -9,14 +9,10 @@ class user extends BaseController
 
         return view('user/index');
     }
-    // public function register()
-    // {
 
-    //     return view('auth/register');
-    // }
-    // public function user()
-    // {
+    public function pilih()
+    {
 
-    //     return view('user/index');
-    // }
+        return view('user/pilih');
+    }
 }
